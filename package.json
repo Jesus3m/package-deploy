@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "test": "echo \"No test implemented\"",
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "lint": "eslint src --ext .ts,.tsx",
     "prepublishOnly": "npm run build",
