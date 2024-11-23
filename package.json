@@ -1,5 +1,5 @@
 {
-  "name": "@Jesus3m/package-test-deploy",
+  "name": "@Jesus3m/package-deploy",
   "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jesus3m/package-test-deploy.git"
+    "url": "https://github.com/Jesus3m/package-deploy.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
