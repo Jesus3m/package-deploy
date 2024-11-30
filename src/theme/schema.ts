@@ -14,11 +14,11 @@ export class Theme {
         primary: {
           default: {
             foreground: '#fff',
-            background: '#1877F2',
+            background: '#dbe5ff',
           },
           hover: {
             foreground: '#fff',
-            background: '#1111c2',
+            background: '#8eacfa',
           },
           active: {
             foreground: '#000000',
@@ -31,11 +31,11 @@ export class Theme {
         },
         secondary: {
           default: {
-            background: '#d21e1e',
+            background: '#7c9ffc',
             foreground: '#ffffff',
           },
           active: {
-            background: '#f18181',
+            background: '#7c9ffc',
             foreground: '#ffffff',
           },
         },

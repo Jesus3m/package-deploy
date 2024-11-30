@@ -6,6 +6,7 @@ import { ITheme } from './types';
 
 export interface ThemeContextProps {
   theme: ITheme;
+  changeTheme: (theme: ITheme['key']) => void;
 }
 
 export const ThemeContext = createContext<ThemeContextProps>(
@@ -15,8 +16,12 @@ export const ThemeContext = createContext<ThemeContextProps>(
 export const ThemeProvider: FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
+  const changeTheme = (theme: ITheme['key']) => {
+    Theme.theme.key = theme;
+  };
+
   return (
-    <ThemeContext.Provider value={{ theme: Theme.theme }}>
+    <ThemeContext.Provider value={{ theme: Theme.theme, changeTheme }}>
       <GlobalStyles />
       <EmotionThemeProvider theme={Theme.theme}>
         {children}
