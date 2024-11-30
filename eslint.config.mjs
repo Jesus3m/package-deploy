@@ -1,6 +1,7 @@
 import pluginJs from '@eslint/js';
 import pluginPrettier from 'eslint-plugin-prettier';
 import pluginReact from 'eslint-plugin-react';
+import pluginStorybook from 'eslint-plugin-storybook';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
@@ -14,6 +15,7 @@ export default [
   {
     plugins: {
       prettier: pluginPrettier,
+      storybook: pluginStorybook,
     },
     rules: {
       'prettier/prettier': 'error', // Marca como error los problemas de Prettier
@@ -24,6 +26,7 @@ export default [
   {
     rules: {
       ...pluginPrettier.configs.recommended.rules,
+      'react/no-unknown-property': ['error', { ignore: ['css'] }],
     },
   },
   ,
