@@ -1,6 +1,6 @@
 {
   "name": "@jesus3m/package-deploy",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "src/index.ts",
   "scripts": {
     "test": "echo \"No test implemented\"",
